@@ -96,25 +96,80 @@
       <table class="schedule table table-sm table-hover">
         <tbody>
           <tr>
-            <td style="width:120px"><b>9:00-9:30</b></td>
+            <td style="width:120px"><b>8:30-9:00</b></td>
             <td style="width:300px"><b>Breakfast</b></td>
             <td />
           </tr>
           <tr>
-            <td style="width:120px"><b>9:30-9:45</b></td>
+            <td style="width:120px"><b>9:00-9:10</b></td>
             <td style="width:300px"><b>Opening Remarks</b></td>
             <td />
           </tr>
 
           <tr>
-            <td><b>9:45-10:45</b></td>
-            <td><b>Talk Session 1</b></td>
-            <td><b>TBA</b></td>
+            <td><b>9:10-9:30</b></td>
+            <td><b>Nirmit Joshi</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>A Theory of Learning with Autoregressive Chain of Thought</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> To solve complex tasks, especially those requiring multi-step or compositional reasoning and computation, autoregressive generation produces a Chain-of-Thought that ultimately leads to the desired answer. In this talk, I will discuss a formal framework for studying this emerging learning paradigm, both when the chain-of-thought is observed and when training only on prompt-answer pairs, with the chain-of-thought latent. We shall see how attention naturally arises as a key ingredient for "universal'' autoregressive learning with Chain-of-Thought. Central to our development is that iterating a fixed (time-invariant) next-token generator allows for sample complexity independent of the Chain-of-Thought length.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>9:30-9:50</b></td>
+            <td><b>Shuo Xie</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Adam Exploits $\ell_\infty$-geometry of Loss Landscape via Coordinate-wise Adaptivity</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Adam outperforms SGD when training language models. Yet this advantage is not well-understood theoretically --  previous convergence analysis for Adam and SGD mainly focuses on the number of steps $T$ and is already minimax-optimal in non-convex cases, which are both $\widetilde{O}(T^{-1/4})$. In this work, we argue that the exploitation of nice $\ell_\infty$-geometry is the key advantage of Adam over SGD. More specifically, we give a new convergence analysis for Adam under novel assumptions that loss is smooth under $\ell_\infty$-geometry rather than the more common $\ell_2$-geometry, which yields a much better empirical smoothness constant for GPT-2 and ResNet models. Our experiments confirm that Adam performs much worse when the favorable $\ell_\infty$-geometry is changed while SGD provably remains unaffected. We also extend the convergence analysis to blockwise Adam under novel blockwise smoothness assumptions.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>9:50-10:10</b></td>
+            <td><b>Dimitar Chakarov</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Incentivizing Truthful Collaboration in Heterogeneous Federated Learning</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Federated learning (FL) is a distributed collaborative learning method, where multiple clients learn together by sharing gradient updates instead of raw data. However, it is well-known that FL is vulnerable to manipulated updates from clients. In this work we study the impact of data heterogeneity on clients’ incentives to manipulate their updates. First, we present heterogeneous collaborative learning scenarios where a client can modify their updates to be better off, and show that these manipulations can lead to diminishing model performance. To prevent such modifications, we formulate a game in which clients may misreport their gradient updates in order to "steer" the server model to their advantage. We develop a payment rule that provably disincentivizes sending modified updates under the FedSGD protocol. We derive explicit bounds on the clients’ payments and the convergence rate of the global model, which allows us to study the trade-off between heterogeneity, payments and convergence. Finally, we provide an experimental evaluation of the effectiveness of our payment rule in the FedSGD, median-based aggregation FedSGD and FedAvg protocols on three tasks in computer vision and natural language processing. In all cases we find that our scheme successfully disincentivizes modifications.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>10:10-10:30</b></td>
+            <td><b>Kavya Ravichandran</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Pessimism Traps and Algorithmic Interventions</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> In this work, we relate the philosophical literature on pessimism traps to information cascades, a formal model derived from the economics and mathematics literature. A pessimism trap is a social pattern in which individuals in a community, in situations of uncertainty, copy the sub-optimal actions of others, despite their individual beliefs. This maps nicely onto the concept of an information cascade, which involves a sequence of agents making a decision between two alternatives, with a private signal of the superior alternative and a public history of others' actions. Key results from the economics literature show that information cascades occur with probability one in many contexts, and depending on the strength of the signal, populations can fall into the incorrect cascade very easily and quickly. Once formed, in the absence of external perturbation, a cascade cannot be broken -- therefore, we derive an intervention that can be used to nudge a population from an incorrect to a correct cascade and, importantly, maintain the cascade once the subsidy is discontinued. We extend this to the case of multiple communities, each of which might have a different optimal action, and a government providing subsidies that cannot discriminate between communities and does not know which action is optimal for each.  We study this both theoretically and empirically.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>10:30-10:50</b></td>
+            <td><b>Keziah Naggita</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Parental Responses to Aggressive Child Behavior towards Robots, Smart Speakers, and Tablets</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> The increasing growth of robots and other technological devices in homes makes it critical to understand child-device interactions within the home, especially given the real possibility of child aggression towards these devices. To explore factors that currently and will, in the future, shape child-robot interaction in the home related to children's aggressive behavior, we conducted a 2 x 3 x 3 between-subjects crowdsourced study ($N = 332$) that examined how parents would respond and perceive their child interacting with different technological devices. Participants were shown a video clip of a person interacting with a technological device (robot, smart speaker, or tablet), exhibiting either aggressive or neutral behavior, and interacting with the device in one of three interaction modalities (audio, physical, or audio+physical). Imagining that the person in the video was their child, parents who observed aggressive behavior compared with neutral behavior indicated greater concern, a higher likelihood to intervene, distinct intervention methods, a higher perception of device mistreatment, and greater sympathy for the device. Despite hypothesizing that the robot would be seen as the most anthropomorphic, animate and, warm device, participant ratings of the robot were no different than the smart speaker, however, both devices were rated more highly on those dimensions than the tablet. 
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>10:50-11:00</b></td>
+            <td><b>Break</b></td>
+            <td><b></b></td>
             <td />
           </tr>
 
           <tr>
-            <td><b>10:45-11:45</b></td>
+            <td><b>11:00-12:00</b></td>
             <td><b>Invited Talk: Nick Kolkin</b></td>
             <td><a onclick="showAbstract(this)" class="title"><b>Nudging, Mapping, and Molding Generative Visual Features</b></a>
               <br />
@@ -126,7 +181,7 @@
           </tr>
 
           <tr>
-            <td><b>11:45-12:30</b></td>
+            <td><b>12:00-12:30</b></td>
             <td><b>Lunch</b></td>
             <td><b>Fourth Floor Common Area</b></td>
           </tr>
@@ -138,33 +193,103 @@
           </tr>
 
           <tr>
-            <td><b>13:30-14:30</b></td>
-            <td><b>Talk Session 2</b></td>
-            <td><b>TBA</b></td>
+            <td><b>13:30-13:50</b></td>
+            <td><b>Luzhe Sun</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Consistency model for shared autonomy</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Shared autonomy is an enabling technology that provides users with control authority over robots that would otherwise be difficult if not impossible to directly control. Yet, standard methods make assumptions that limit their adoption in practice---whether it is that they have prior knowledge of the user's goals or the objective (i.e., reward) function that they wish to optimize, knowledge of the user's policy, or query-level access to the user during training. Diffusion-based approaches to shared autonomy do not make such assumptions and instead only require access to demonstrations of desired behaviors, while allowing the user to maintain control authority. However, these advantages have come at the expense of high computational complexity, which has made real-time shared autonomy all but impossible. To overcome this limitation, we propose ShrinkJourney, a shared autonomy framework that employs a consistency model-based formulation of diffusion. Key to ShrinkJourney is that it employs the distilled probability flow of ordinary differential equation (PF ODE) to generate high-fidelity samples in a single step. This results in inference speeds significantly faster than what is possible with previous diffusion-based approaches to shared autonomy, enabling real-time assistance in complex systems with only a single function evaluation (NFE). Further, by intervening on flawed actions at intermediate states of the PF ODE, ShrinkJourney enables varying levels of assistance. We evaluate ShrinkJourney on a variety of challenging simulated and real-world robot control problems, demonstrating significant improvements over state-of-the-art methods both in terms of task performance and computational efficiency.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>13:50-14:10</b></td>
+            <td><b>Tianyang Xu</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Can language models learn typologically implausible languages?</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Grammatical features across human languages show intriguing correlations often attributed to learning biases in humans. However, empirical evidence has been limited to experiments with highly simplified artificial languages, and whether these correlations arise from domain-general or language-specific biases remains a matter of debate. Language models (LMs) provide an opportunity to study artificial language learning at a large scale and with a high degree of naturalism. In this paper, we begin with an in-depth discussion of how LMs allow us to better determine the role of domain-general learning biases in language universals. We then assess learnability differences for LMs resulting from typologically plausible and implausible languages closely following the word-order universals identified by linguistic typologists. We conduct a symmetrical cross-lingual study training and testing LMs on an array of highly naturalistic but counterfactual versions of the English (head-initial) and Japanese (head-final) languages. Compared to similar work, our datasets are more naturalistic and fall closer to the boundary of plausibility. Our experiments show that these LMs are often slower to learn these subtly implausible languages, while ultimately achieving similar performance on some metrics regardless of typological plausibility. These findings lend credence to the conclusion that LMs do show some typologically-aligned learning preferences, and that the typological patterns may result from, at least to some degree, domain-general learning biases.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>14:10-14:30</b></td>
+            <td><b>Chung-Ming Chien</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Joint speech-text generation with collaborative spoken and written language models</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Research about joint speech-text generation with language models has gained significant interest in recent years. These models aim to leverage the content generation capabilities acquired through text-based pre-training to improve long-context coherence in speech generation, a known challenge for pure speech models such as generative spoken language models (GSLMs). Additionally, information from the speech modality can provide valuable insights that do not exist in written language, potentially enhancing the model's capabilities in understanding and generating language. However, adapting pre-trained text-based language models to handle new sequence formats, often consisting of interleaved text and speech tokens, requires substantial training data and computational resources. In this research, we explore the possibility of decomposing the task into two parts, each handled by a model focused on a specific modality—one for text and one for speech. While both models have access to information from both modalities, they remain focused on generation within their respective domains. By avoiding the need to adapt models to new sequence formats, we aim to reduce the computational costs and resources required to develop joint speech-text generation frameworks, with the goal of facilitating the development of speech conversation systems using academic-level resources in the future.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>14:30-14:40</b></td>
+            <td><b>Break</b></td>
+            <td><b></b></td>
             <td />
           </tr>
 
           <tr>
-            <td><b>14:30-15:30</b></td>
-            <td><b>Talk Session 3</b></td>
-            <td><b>TBA</b></td>
-            <td />
+            <td><b>14:40-15:00</b></td>
+            <td><b>Shester Gueuwou</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>SHuBERT: Self-Supervised Sign Language Representation Learning via Multi-Stream Cluster Prediction</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Sign language processing has traditionally relied on task-specific models,limiting the potential for transfer learning across tasks. We introduce SHuBERT (Sign Hidden-Unit BERT), a self-supervised transformer encoder that learns strong representations from approximately 1,000 hours of American Sign Language (ASL) video content. Inspired by the success of the HuBERT speech representation model, SHuBERT adapts masked prediction for multi-stream visual sign language input, learning to predict multiple targets for corresponding to clustered hand, face, and body pose streams. SHuBERT achieves state-of-the-art performance across multiple benchmarks. On sign language translation, it outperforms prior methods trained on publicly available data on the How2Sign (+0.7 BLEU), OpenASL (+10.0 BLEU), and FLEURS-ASL (+0.3 BLEU) benchmarks. Similarly for isolated sign language recognition, SHuBERT's accuracy surpasses that of specialized models on ASL-Citizen (+5%) and SEM-LEX (+20.6%), while coming close to them on WLASL2000 (-3%). Ablation studies confirm the contribution of each component of the approach.
+              </div>
+            </td>
           </tr>
 
           <tr>
-            <td><b>15:30-16:20</b></td>
+            <td><b>15:00-15:20</b></td>
+            <td><b>Marcelo Sandoval-Castañeda</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Modeling Movies as Language</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> In the fields of filmmaking and film studies, comparing movies to a language's grammar is a common analogy to convey the conventions, decisions, and structure involved in the process of making them, often referred to as idioms. They are typically rules based on filmmakers' intuitions of aesthetic quality, style, and what the audience will experience while watching the movie. Early works in camera control for 3D environments leveraged movie idioms explicitly through expert systems and graph cost functions. In this work, we revisit the notion of film language by modeling the structure of movie scenes using modern methods from natural language processing. We use a discrete one-dimensional tokenizer for images, a sliding window auto-regressive transformer, and a position-based cross-entropy loss to model sequences of frames at the movie's original temporal resolution. We show that this approach is effective in modeling movie patterns, even with relatively limited data, through its performance in various synthetic movie editing tasks.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>15:20-15:40</b></td>
+            <td><b>Xiaodan Du</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>Editing of SVG Graphics with Multi-Modal Large Language Models: Fantasy Maps as a Case Study</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> Scalable Vector Graphics (SVG) offer unique advantages in image representation, such as infinite scalability, compact file size, and precise editability. These attributes make SVG ideal for applications requiring hierarchical consistency and structured manipulation. This research explores the integration of Multi-Modal Large Language Models (MLLMs) with SVG-based images to enable interactive refinement and editing of vector graphics through natural language prompts. Maps, as a natural application of SVG, serve as an illustrative example of this framework. Users can edit SVG graphics by providing text instructions, guiding the system to plan and insert pre-defined SVG elements. By leveraging MLLMs' ability to understand spatial relationships and generate structured outputs, this approach has the potential to extend beyond maps to broader domains, including architectural diagrams, scientific illustrations, and interactive infographics. This research aims to advance MLLM capabilities in structured vector graphic manipulation while addressing challenges related to hierarchical constraints, scalability, and semantic coherence.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>15:40-16:00</b></td>
+            <td><b>Jiahao Li</b></td>
+            <td><a onclick="showAbstract(this)" class="title"><b>FastMap: Revisiting Dense and Scalable Structure from Motion</b></a>
+              <br />
+              <div class="abs">
+                <b>Abstract.</b> We propose FastMap, a new global structure from motion method focused on speed and simplicity. Previous methods like COLMAP and GLOMAP are able to estimate high-precision camera poses, but suffer from poor scalability when the number of matched keypoint pairs becomes large. We identify two key factors leading to this problem: poor parallelization and computationally expensive optimization steps. To overcome these issues, we design an SfM framework that relies entirely on GPU-friendly operations, making it easily parallelizable. Moreover, each optimization step runs in time linear to the number of image pairs, independent of keypoint pairs or 3D points. Through extensive experiments, we show that FastMap is one to two orders of magnitude faster than COLMAP and GLOMAP on large-scale scenes with comparable pose accuracy.
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>16:00-16:50</b></td>
             <td><b>Panel Discussion</b></td>
             <td><b>TBA</b></td>
             <td />
           </tr>
 
           <tr>
-            <td><b>16:20-16:30</b></td>
+            <td><b>16:50-17:00</b></td>
             <td><b>Awards & Final Remarks</b></td>
             <td />
           </tr>
           <tr>
-            <td><b>16:30-</b></td>
+            <td><b>17:00-</b></td>
             <td><b>TGIF</b></td>
             <td><b>Come to the fourth floor common area for food and drinks!
             </td>
